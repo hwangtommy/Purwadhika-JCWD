@@ -6,16 +6,30 @@
 // Use private on the properties
 
 class calculator{
-    constructor(input){
-        this.Input = input;
+    #input = ""
+    #historyArr = []
+
+    #number = 0
+    constructor(){
+        // this.#input = input;
+        // this.historyArr = []
+    }
+
+    set number(val) {
+        if (typeof val != "number")
+        throw new Error("not a number")
+        else
+        this.number = val
+
     }
 
     get calcInput(){
-        return this.Input
+        return this.#input
     }
 
     set calcInput(input){
-        this.historyArr.push(this.Input);
+        this.#input = input
+        this.#historyArr.push(this.#input);
     }
     
     calcHistory(){
@@ -27,15 +41,21 @@ class calculator{
     }
 
     showResult(){
-        this.Input = this.Input.replace(/x/g, "*")
-        this.Input = this.Input.replace(/:/g, "/")
-        return eval(this.Input)
+        this.Input = this.#input.replace(/x/g, "*")
+        this.Input = this.#input.replace(/:/g, "/")
+        return eval(this.#input)
     }
 }
 
 let string = "5+5x10:2"
-let calc1 = new calculator(string)
-console.log(calc1.calcHistory())
-let string1 = "3+5x10"
-let calc2 = new calculator(string1)
-console.log(calc2.showResult())
+let calc1 = new calculator()
+calc1.calcInput = string
+console.log(calc1);
+calc1.calcInput = "5+5"
+console.log(calc1);
+console.log(calc1.calcInput);
+
+// console.log(calc1.calcHistory())
+// let string1 = "3+5x10"
+// let calc2 = new calculator(string1)
+// console.log(calc2.showResult())
