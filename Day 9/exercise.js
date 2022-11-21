@@ -8,19 +8,13 @@
 class calculator{
     #input = ""
     #historyArr = []
-
     #number = 0
-    constructor(){
-        // this.#input = input;
-        // this.historyArr = []
-    }
 
     set number(val) {
         if (typeof val != "number")
         throw new Error("not a number")
         else
         this.number = val
-
     }
 
     get calcInput(){
