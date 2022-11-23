@@ -56,7 +56,6 @@ function isAnagram(s, t){
 
 // Question 4: Stairs
 
-// I guess this involves fibonacci?
 function stairSteps(n){
     let a = 0
     let b = 1
@@ -68,4 +67,4 @@ function stairSteps(n){
     return b
 }
 
-console.log(stairSteps(5))
+// console.log(stairSteps(5))
