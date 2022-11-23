@@ -64,7 +64,7 @@ function romanToInt(roman){
     return count;
 }
 
-console.log(romanToInt("XVII"))
+console.log(romanToInt("IX"))
 
 // Question 3: Given an integer numRows, return the first numRows of Pascal's triangle.
 function pascalTriangle(numRows){
@@ -114,4 +114,4 @@ function maxProfit(prices){
     return highest-lowest;
 }
 
-console.log(maxProfit([7,6,4,3,1]))
+console.log(maxProfit([7,6,4,8,9,4]))
