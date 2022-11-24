@@ -23,24 +23,33 @@ class player{
 
         if (ballArr.length != 0){
             let goal = Math.round(Math.random());
-            if (ballArr.length == 1 && ballArr[0] == 8){
-                if (goal == 1){
+            if (goal == 1){
+                if (ballArr.length == 15 && solidBalls.includes(ballArr[0])){
+                    console.log(`${this.name} hit ${ballArr[0]} success! ${this.name} gets the solid balls.`)
+                    ballArr.splice(0,1);
+                }
+                if (ballArr.length == 15 && stripeBalls.includes(ballArr[0])){
+                    console.log(`${this.name} hit ${ballArr[0]} success! ${this.name} gets the stripe balls.`)
+                    ballArr.splice(0,1);
+                }
+                else if (ballArr.length == 1){
                     console.log(`${this.name} has hit the 8 ball. ${this.name} wins.`)
                     ballArr.splice(0,1);
                 }
-            }
-            else if (ballArr[0] == 8 && goal == 1){
-                console.log(`${this.name} has hit the 8 ball. The opponent wins.`)
-                ballArr.length = 0;
+                else if (ballArr[0] == 8){
+                    console.log(`${this.name} has hit the 8 ball. The opponent wins.`)
+                    ballArr.length = 0;
+                }
+                else{
+                    console.log(`${this.name} hit ${ballArr[0]} success!`)
+                    ballArr.splice(0,1);
+                    this.hitEightBall(ballArr)
+                }
             }
             else if (goal == 0){
                 console.log(`${this.name} hit ${ballArr[0]} failed!`)
             }
-            else if (goal == 1){
-                console.log(`${this.name} hit ${ballArr[0]} success!`)
-                ballArr.splice(0,1);
-                this.hitEightBall(ballArr)
-            }
+            
         }
     }
 }
