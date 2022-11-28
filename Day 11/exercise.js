@@ -68,3 +68,4 @@ function stairSteps(n){
 }
 
 // console.log(stairSteps(5))
+module.exports = isAnagram;
