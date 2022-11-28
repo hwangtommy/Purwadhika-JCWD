@@ -114,4 +114,6 @@ function maxProfit(prices){
     return highest-lowest;
 }
 
-console.log(maxProfit([7,6,4,8,9,4]))
+console.log(maxProfit([1,7,6,4,8,9]))
+
+module.exports = maxProfit;
