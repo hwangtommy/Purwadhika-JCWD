@@ -1,0 +1,78 @@
+.navbar{
+    height: 35px;
+    background-color: black;
+    width: 100%;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: black;
+    background-color: grey;
+}
+
+.menu{
+    color: white;
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    display: block;
+}
+
+.band-image{
+    text-align: center;
+}
+
+.band-image img{
+    width: 100%;
+}
+
+.bottomtext{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.bottomtext h3{
+    font-size: 24px;
+}
+
+.band-details p{
+    font-family: "Lato",sans-serif;
+}
+
+
+.band-details{
+    text-align:center;
+    font-family: "Lato",sans-serif;
+}
+
+.details{
+    text-align: justify;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+
+#band-members{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 25px;
+}
+
+.member img{
+    max-width: 75%;
+}
+
+.member{
+    text-align: center;
+    
+}
