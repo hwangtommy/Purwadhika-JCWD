@@ -2,12 +2,12 @@ function Item (props){
 return(
     <div className="item">
         <div className="product-photo">
-            <img src={props.img} alt="Foto Produk" />
+            <img src={props.data.img} alt="Foto Produk" />
         </div>
         <div className="product-details">
-            <h5>{props.price}</h5>
-            <p>{props.details}</p>
-            <p>{props.location}</p>
+            <h5>{props.data.price}</h5>
+            <p>{props.data.details}</p>
+            <p>{props.data.location}</p>
         </div>
     </div>
 )

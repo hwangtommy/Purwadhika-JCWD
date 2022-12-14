@@ -1,0 +1,14 @@
+{
+    "todo": [
+        {
+            "id": 1,
+            "todolist": "makan",
+            "date": "12 December"
+        },
+        {
+            "id": 2,
+            "todolist": "tidur",
+            "date": "11 December"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+  "listItems": [
+    {
+      "id": 0,
+      "price": "Rp.50.000.000",
+      "details": "Rumah Makan",
+      "location": "Batam",
+      "img": "https://images.tokopedia.net/img/JFrBQq/2022/4/20/b2bf60a7-a75f-4201-b417-57486054aec3.jpg"
+    },
+    {
+      "id": 1,
+      "price": "Rp.50.000.000",
+      "details": "Rumah Makan",
+      "location": "Batam",
+      "img": "https://images.tokopedia.net/img/JFrBQq/2022/4/20/b2bf60a7-a75f-4201-b417-57486054aec3.jpg"
+    },
+    {
+      "id": 2,
+      "price": "Rp.50.000.000",
+      "details": "Rumah Makan",
+      "location": "Batam",
+      "img": "https://images.tokopedia.net/img/JFrBQq/2022/4/20/b2bf60a7-a75f-4201-b417-57486054aec3.jpg"
+    },
+    {
+      "id": 3,
+      "price": "Rp.50.000.000",
+      "details": "Rumah Makan",
+      "location": "Batam",
+      "img": "https://images.tokopedia.net/img/JFrBQq/2022/4/20/b2bf60a7-a75f-4201-b417-57486054aec3.jpg"
+    },
+    {
+      "id": 4,
+      "price": "Rp.50.000.000",
+      "details": "Rumah Makan",
+      "location": "Batam",
+      "img": "https://images.tokopedia.net/img/JFrBQq/2022/4/20/b2bf60a7-a75f-4201-b417-57486054aec3.jpg"
+    },
+    {
+      "id": 5,
+      "price": "",
+      "details": "",
+      "location": "",
+      "img": ""
+    }
+  ]
+}
