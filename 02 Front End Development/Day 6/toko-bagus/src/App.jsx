@@ -21,12 +21,15 @@ function App() {
   function inputHandler(event){
     const {value, name} = event.target;
 
-    name === "search" ?
-    setSearch(value):
-    addItem({
-      ...itemObj,
-      [name]: value,
-    })
+    if (name === "search"){
+      setSearch(value)
+    }
+    else{
+      addItem({
+        ...itemObj,
+        [name]: value,
+      })
+    }
   }
 
   function fetchItems(){
