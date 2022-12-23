@@ -1,0 +1,19 @@
+{
+    "posts":[
+        {
+            "id" : 0,
+            "photo_url" : "",
+            "name" : "",
+            "details" : "",
+            "price" : ""
+        }
+    ],
+    "users":[
+        {
+            "id" : 0,
+            "email" : "",
+            "name" : "",
+            "password" : ""
+        }
+    ]
+}
